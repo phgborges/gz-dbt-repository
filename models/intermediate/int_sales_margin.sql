@@ -4,7 +4,7 @@ select
     ,orders_id
     ,revenue
     ,quantity
-    ,CAST(purchase_price as FLOAT64)
+    ,CAST(purchase_price as FLOAT64) as purchase_price
     ,round(S.QUANTITY*CAST(p.purchase_price AS FLOAT64),2) AS purchase_cost
     ,ROUND(s.revenue - round(S.QUANTITY*CAST(p.purchase_price AS FLOAT64),2),2) AS margin
 
