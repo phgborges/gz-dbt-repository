@@ -41,3 +41,4 @@ models:
       +materialized: table
       finance:
         +schema: finance_days
+
